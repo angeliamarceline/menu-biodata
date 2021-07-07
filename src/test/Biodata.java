@@ -31,7 +31,7 @@ public class Biodata {
         // cetak hasil
         System.out.println("Nama Kamu: " + nama);
         System.out.println("Umur Kamu adalah " + umur + " Tahun");
- 
- 
+
+        input.close();
     }
 }
