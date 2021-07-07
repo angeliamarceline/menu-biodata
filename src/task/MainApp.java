@@ -26,7 +26,7 @@ public class MainApp {
 
         // rumus perhitungan
         int age = thisYear - 1999;
-
+        
         System.out.println("Menu");
         System.out.println("1. Personal Information");
         System.out.println("2. Education Background");
