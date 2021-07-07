@@ -16,7 +16,7 @@ public class MainApp {
         education.setElementarySchool("SD Regina Pacis");
         education.setJuniorHighSchool("SMP Regina Pacis");
         education.setSeniorHighSchool("SMA Regina Pacis");
-        education.setUniversity("Universitas Bina Nusantara");
+        education.setUniversity("BINUS University");
 
         // inisialisasi kalender
         Calendar calendar = Calendar.getInstance();
@@ -36,9 +36,10 @@ public class MainApp {
             System.out.println("=======================");
             System.out.println("1. Personal Information");
             System.out.println("2. Education Background");
+            System.out.println("3. Exit");
 
             // mengambil input
-            System.out.print("Input [1 | 2] : ");
+            System.out.print("Input [ 1 | 2 | 3 ] : ");
             menu = scan.nextInt();
 
             System.out.println("\n");
@@ -59,12 +60,15 @@ public class MainApp {
                     System.out.println("Senior High School :" + " " + education.getSeniorHighSchool());
                     System.out.println("Universitas :" + " " + education.getUniversity());
                     break;
-                // default:
-                // System.out.println("Error!");
+                case 3:
+                    System.out.println("Exiting Program...");
+                    System.exit(0);
+                    // default:
+                    // System.out.println("Error!");
             }
 
             // scan.close();
-        } while (menu != 1 && menu != 2);
+        } while (menu != 1 && menu != 2 && menu != 3);
 
     }
 }
