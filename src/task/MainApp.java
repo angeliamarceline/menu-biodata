@@ -26,7 +26,7 @@ public class MainApp {
         Scanner scan = new Scanner(System.in);
 
         // mengambil input
-        System.out.print("Input : ");
+        System.out.print("Input [1 | 2] : ");
         menu = scan.nextLine();
 
         switch (menu) {
