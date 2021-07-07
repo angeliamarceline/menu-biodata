@@ -26,39 +26,44 @@ public class MainApp {
 
         // rumus perhitungan
         int age = thisYear - 1999;
-        int menu;
+        int menu = 0;
+
+        // membuat variabel dan Scanner
+        Scanner scan = new Scanner(System.in);
 
         do {
             System.out.println("Menu");
+            System.out.println("=======================");
             System.out.println("1. Personal Information");
             System.out.println("2. Education Background");
-            
-            // membuat variabel dan Scanner
-            Scanner scan = new Scanner(System.in);
 
             // mengambil input
             System.out.print("Input [1 | 2] : ");
             menu = scan.nextInt();
 
+            System.out.println("\n");
+
             switch (menu) {
                 case 1:
                     System.out.println("Personal Information");
+                    System.out.println("=======================");
                     System.out.println("Full Name :" + " " + person.getFirstName() + " " + person.getLastName());
                     System.out.println("Address :" + " " + person.getAddress());
                     System.out.println("Age :" + " " + age + " " + "Tahun");
                     break;
                 case 2:
                     System.out.println("Education Background");
+                    System.out.println("=======================");
                     System.out.println("Elementary School :" + " " + education.getElementarySchool());
                     System.out.println("Junior High School :" + " " + education.getJuniorHighSchool());
                     System.out.println("Senior High School :" + " " + education.getSeniorHighSchool());
                     System.out.println("Universitas :" + " " + education.getUniversity());
                     break;
-                default:
-                    System.out.println("Error!");
+                // default:
+                // System.out.println("Error!");
             }
 
-            scan.close();
+            // scan.close();
         } while (menu != 1 && menu != 2);
 
     }
