@@ -1,5 +1,6 @@
 package src.task;
 
+import java.util.Calendar;
 import java.util.Scanner;
 
 public class MainApp {
@@ -16,6 +17,10 @@ public class MainApp {
         education.setJuniorHighSchool("SMP Regina Pacis");
         education.setSeniorHighSchool("SMA Regina Pacis");
         education.setUniversity("Universitas Bina Nusantara");
+
+        Calendar calendar = Calendar.getInstance();
+        int thisYear = calendar.get(Calendar.YEAR);
+        int age = thisYear - 1999;
 
         System.out.println("Menu");
         System.out.println("1. Personal Information");
@@ -34,7 +39,7 @@ public class MainApp {
                 System.out.println("Personal Information");
                 System.out.println("Full Name :" + " " + person.getFirstName() + " " + person.getLastName());
                 System.out.println("Address :" + " " + person.getAddress());
-                System.out.println("Age :" + " " + person.getDateOfBirth() + " " + "Years");
+                System.out.println("Age :" + " " + age + " " + "Tahun");
                 break;
             case "2":
                 System.out.println("Education Background");
