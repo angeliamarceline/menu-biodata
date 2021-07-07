@@ -18,8 +18,13 @@ public class MainApp {
         education.setSeniorHighSchool("SMA Regina Pacis");
         education.setUniversity("Universitas Bina Nusantara");
 
+        // inisialisasi kalender
         Calendar calendar = Calendar.getInstance();
+
+        // tampung ke variable
         int thisYear = calendar.get(Calendar.YEAR);
+
+        // rumus perhitungan
         int age = thisYear - 1999;
 
         System.out.println("Menu");
