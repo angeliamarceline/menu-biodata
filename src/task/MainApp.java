@@ -10,7 +10,7 @@ public class MainApp {
         person.setFirstName("Angelia");
         person.setLastName("Marceline");
         person.setAddress("Jakarta");
-        person.setDateOfBirth("1999");
+        person.setDateOfBirth(1999);
 
         Education education = new Education();
         education.setElementarySchool("SD Regina Pacis");
