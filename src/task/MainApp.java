@@ -51,6 +51,7 @@ public class MainApp {
                     System.out.println("Full Name :" + " " + person.getFirstName() + " " + person.getLastName());
                     System.out.println("Address :" + " " + person.getAddress());
                     System.out.println("Age :" + " " + age + " " + "Tahun");
+                    System.out.println("\n");
                     break;
                 case 2:
                     System.out.println("Education Background");
@@ -59,6 +60,7 @@ public class MainApp {
                     System.out.println("Junior High School :" + " " + education.getJuniorHighSchool());
                     System.out.println("Senior High School :" + " " + education.getSeniorHighSchool());
                     System.out.println("Universitas :" + " " + education.getUniversity());
+                    System.out.println("\n");
                     break;
                 case 3:
                     System.out.println("Exiting Program...");
@@ -68,7 +70,7 @@ public class MainApp {
             }
 
             // scan.close();
-        } while (menu != 1 && menu != 2 && menu != 3);
+        } while ( menu != 3);
 
     }
 }
