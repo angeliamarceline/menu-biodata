@@ -69,8 +69,9 @@ public class MainApp {
                     // System.out.println("Error!");
             }
 
-            // scan.close();
         } while ( menu != 3);
+        
+        scan.close();
 
     }
 }
